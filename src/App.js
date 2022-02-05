@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Radio from "./components/radio/Radio";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className='w-full h-[1200px] text-[#a2abbd] leading-[80px] bg-gradient-to-b from-[#21212b] to-[#21212b] pt-[100px]'>
+        <Radio />
+      </div>
+    );
+  }
 }
 
 export default App;
